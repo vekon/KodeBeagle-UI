@@ -1,0 +1,81 @@
+---
+title: KodeBeagle
+layout: about
+stylesheet: about/index.css
+basepath: ../
+---
+<section class="section-container" id="intro"
+            >
+    <section class="container"
+   >
+   		<div class="welcome-component-wrapper">
+			<div>
+				<div class="welcome-component">
+					<div class="welcome-comp-header">
+						<h1>KodeBeagle
+							<sup>beta</sup>
+						</h1>
+						<p>Contextual <a href="{{ page.basepath }}">code search*</a> over 1 Billion lines of code by <a href="http://www.imaginea.com" target="_blank">Imaginea</a></p>
+						
+				    </div>
+				    <p class="tagline">
+                    Analyse <span class="dot"> &middot; </span> Study <span> &middot; </span> Learn
+                	</p>
+		            <div class="section-content">
+		            	<p>The KodeBeagle is an open source software, offering analysis and searches for code references when required. KodeBeagle is a free code search engine indexing over 1 Billion lines of open source code from approximately 5,50,000 GitHub project repositories.</p>
+
+						<p>It is a context sensitive search that helps you with the right information at the right time. It helps you to search by terms and snippets and currently supports only Java. The search keywords or terms can be Java Class names.
+		                </p>
+		            </div>
+				</div>
+
+		    </div>
+		</div>
+	</section>
+</section>
+
+<section class="section-container" id="features">
+	{% include about/feature.html %}
+</section>
+ <section class="section-container" id="eco-system">
+ 	{% include about/ecosystem.html %}
+</section>
+<!--section class="section-container" id="stats">
+    <section class="container">
+        <section class="section-title">
+            <h2 class="title">Statistics</h2>
+        </section>
+        <section class="section-content animation flipInX">
+            <p>A tool to assist you when you need code references. </p>
+            <p>As Developers, we tend to hunt for best-practices of using common and uncommon libraries in order to make our code more efficient.</p>
+
+        </section>
+    </section>
+</section-->
+<section class="section-container" id="use">
+	{% include about/use.html %}
+</section>
+<section class="section-container" id="team">
+	{% include about/contributors.html %}
+</section>
+<section class="section-container" id="contact">
+    {% include about/contact.html %}
+</section>
+<section class="section-container">
+{% include footer.html %}
+</section>
+
+
+
+<script type="text/javascript">
+	basepath = '../';
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/jquery.waypoints.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.9/angular.min.js"></script>
+<script src="../library/dev/js/factories/http-service.js"></script>
+<script src="../library/dev/js/vendors/jquery.smoothscroll.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script src="../library/dev/js/ng-modules/aboutv1.js"></script>

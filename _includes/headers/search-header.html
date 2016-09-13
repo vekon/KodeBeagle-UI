@@ -1,0 +1,32 @@
+<div class="page-loader" ng-hide="true">
+    <div class="progress-bar"></div>
+</div>
+<header>
+
+    <nav class="navbar navbar-default" id="header-nav">
+        <div class="container">
+            <div class="logo-section pull-left">
+                <a href="../" class="logo logo1" ng-cloak title="KodeBeagle">
+                    <img src="{{page.basepath}}images/KB32x32.png" />
+                    KodeBeagle
+                </a>
+                <div class="header-search-component" ng-if="editorView" >
+                    <div search-component data-step="1" data-intro="Search Bar">
+                    </div>
+                </div>
+            </div>
+            <div class="pull-right feature-nav" >
+                <a href="../about">
+                    About
+                </a>
+                <a class="link-separator" href="http://blog.imaginea.com/category/kodebeagle/">
+                Blog</a>
+                <a class="feature custom-icon google-group-icon" href="https://groups.google.com/forum/?fromgroups#!forum/kodebeagle" target="_blank"></a>
+                <a class="feature custom-icon git-icon" target="_blank" href="https://github.com/Imaginea/KodeBeagle/"></a>
+                <a href="#" ng-show="model.showConfig" class="feature glyphicon glyphicon-cog" open-popup data-template="user-settings.html" id="config" data-ctrl="userSettingsCtrl" tooltip-placement="bottom" tooltip="Configuartions">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+</header>

@@ -1,0 +1,29 @@
+{% if page.hideLoader != "hide" %}
+<div class="page-loader" ng-hide="true">
+    <div class="progress-bar"></div>
+</div> 
+{% endif %}
+
+<header class="default-header">
+    <nav class="navbar navbar-default" id="header-nav">
+        <div class="container">
+            <div class="logo-section pull-left">
+                <a href="{{page.basepath}}" class="logo logo1" title="KodeBeagle">
+                    <img src="{{page.basepath}}images/KB32x32.png" />
+                    KodeBeagle
+                </a>
+            </div>
+            <div class="pull-right links">
+                <a href="{{page.basepath}}about">
+                About</a>
+                <a class="link-separator" href="http://blog.imaginea.com/category/kodebeagle/">
+                Blog</a>
+                <a class="custom-icon google-group-icon" target="_blank" href="https://groups.google.com/forum/?fromgroups#!forum/kodebeagle"></a>
+                <a class="custom-icon git-icon" target="_blank" href="https://github.com/Imaginea/KodeBeagle/"></a>
+                <a href="#" ng-show="model.showConfig" class="feature glyphicon glyphicon-cog" open-popup data-template="user-settings.html" id="config" data-ctrl="userSettingsCtrl" tooltip-placement="bottom" tooltip="Configuartions"></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+

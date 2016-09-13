@@ -1,0 +1,39 @@
+
+<div class="methods-content"  >
+    {% raw  %}
+    <p>
+        Methods
+    </p>
+    <ul class="list">
+        <li class="import-section"
+            ng-repeat="import in model.groupedMethods track by $index | orderBy: '-count' "
+            ng-init="import.status = $first || $index == $first + 1" >
+
+            <div class="import-name">
+                <input
+                    type="checkbox"
+                    ng-model="model.packages[ import.typeName ].status"
+                    ng-change="updateFilter()"/>
+                <span ng-click="import.status = !import.status">
+                    {{import.typeName}}
+                </span>
+
+            </div>
+            <div class="method-section open">
+                <ul class="inner-list">
+                    <li class="method" ng-repeat="item in import.props track by $index">
+                        <label>
+                            <input type="checkbox"
+                                   name="method"
+                                   ng-model="model.packages[ import.typeName ].methods[item.name]"
+                                   ng-change="updateFilter()">
+                            {{item.name}}
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    {% endraw %}
+</div>
+
